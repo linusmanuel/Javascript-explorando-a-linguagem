@@ -8,3 +8,6 @@ const listaDeDestinos = new Array(`Salvador`, `São Paulo`, `Rio de Janeiro`);
 listaDeDestinos.push('Luanda');
 
 console.log(listaDeDestinos);
+listaDeDestinos.splice(2, 1);
+
+console.log(listaDeDestinos);
