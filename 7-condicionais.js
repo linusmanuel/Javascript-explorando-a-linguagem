@@ -13,6 +13,7 @@ const maiorIdade = idadeComprador >= 18;
 
 if (maiorIdade || estaAcomphado) {
 	listaDeDestinos.splice(2, 1);
+	console.log('Boa viagem!!!');
 	estaAcomphado ? console.log('Comprador está acompanhado!') : '';
 } else {
 	console.log('Você não é maior de idade, não posso vender!');
