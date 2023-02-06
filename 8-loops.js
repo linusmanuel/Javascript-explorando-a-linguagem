@@ -5,19 +5,23 @@ const listaDeDestinos = new Array(`Salvador`, `São Paulo`, `Rio de Janeiro`);
 const idadeComprador = 18;
 const estaAcomphado = true;
 let temPassagemComprada = false;
-let destino = 'Salvador';
-
+let destino = 'São Paul';
+let destinoExiste = false;
 const podeComprar = idadeComprador >= 18 || estaAcomphado == true;
 
 console.log('Destinos Possíveis: ');
+console.log(listaDeDestinos);
 
 let contador = 0;
 
 while (true) {
 	if (listaDeDestinos[contador] === destino) {
-		console.log('Destino encontrado');
+		destinoExiste = true;
+		break;
 	} else {
-		console.log('Destino não encontrado');
+		destinoExiste = false;
 	}
 	contador += 1;
 }
+
+console.log('Destino existe: ', destinoExiste);
