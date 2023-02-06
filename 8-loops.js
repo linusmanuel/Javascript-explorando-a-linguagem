@@ -1,25 +1,27 @@
 console.log(`Trabalhando com loops \n`);
 
-const listaDeDestinos = new Array(`Salvador`, `São Paulo`, `Rio de Janeiro`);
+const listaDeDestinos = new Array(
+	`Salvador`,
+	`São Paulo`,
+	`Rio de Janeiro`,
+	`Luanda`
+);
 
 const idadeComprador = 18;
 const estaAcomphado = true;
 let temPassagemComprada = false;
-let destino = 'São Paulo';
+let destino = 'So Paulo';
 let destinoExiste = false;
 const podeComprar = idadeComprador >= 18 || estaAcomphado == true;
 
 console.log('Destinos Possíveis: ');
 console.log(listaDeDestinos);
 
-let contador = 0;
-
-while (true) {
-	if (listaDeDestinos[contador] === destino) {
+for (let cont = 0; cont < listaDeDestinos.length; cont++) {
+	if (listaDeDestinos[cont] === destino) {
 		destinoExiste = true;
 		break;
 	}
-	contador += 1;
 }
 
 console.log('Destino existe: ', destinoExiste);
